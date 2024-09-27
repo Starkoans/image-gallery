@@ -1,0 +1,129 @@
+html,
+body {
+	margin: 0;
+	font-family: 'Courier New', Courier, monospace;
+}
+button,
+input {
+	all: unset;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+header {
+	background-color: rgb(32, 32, 32);
+	padding: 20px;
+	color: aliceblue;
+	display: flex;
+}
+.image-link {
+    display: inline-block; 
+    height: 24px;
+    width: 24px;
+  }
+main {
+	min-height: 100dvh;
+	padding-inline: 30px;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(255, 221, 25);
+    /* color: aliceblue; */
+	display: flex;
+	justify-content: space-around;
+}
+#search-input-group {
+	display: flex;
+	width: 90%;
+	margin-right: 2%;
+	border: 1px solid aliceblue;
+	border-radius: 10px;
+	padding: 10px;
+}
+#search-btn {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid aliceblue;
+	width: 10%;
+	border-radius: 10px;
+	transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+#search-btn:hover {
+	border: 1px solid rgb(255, 239, 15);
+	color: rgb(255, 239, 15);
+}
+
+#images-title {
+	font-weight: bolder;
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(71, 71, 71);
+	text-transform: uppercase;
+}
+#clean-search-input {
+	cursor: pointer;
+	transition: color 0.3s ease-in-out;
+}
+#clean-search-input:hover {
+	color: rgb(150, 39, 39);
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 20px;
+}
+.img {
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+	z-index: -2;
+}
+#images-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.img-box {
+	position: relative;
+	height: 400px;
+	width: fit-content;
+	margin: 5px;
+	transition: box-shadow 0.3s ease-in;
+}
+.img-box:hover {
+	box-shadow: inset 0px -70px 50px -30px #000000b0;
+}
+.img-info {
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 10px;
+	transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+	left: 10px;
+	color: aliceblue;
+	text-decoration: none;
+	width: 100%;
+}
+
+.img-info > a {
+	width: 50%;
+	text-overflow: ellipsisж;
+}
+.img-box:hover .img-info {
+	opacity: 1;
+}
+.user-avatar {
+	background: aliceblue;
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.user-avatar > img {
+	border-radius: 10px;
+}
